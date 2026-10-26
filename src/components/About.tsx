@@ -7,9 +7,9 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { number: "7.8", label: "CGPA", suffix: "" },
+    { number: "7.3", label: "CGPA", suffix: "" },
     { number: "1", label: "Project", suffix: "" },
-    { number: "2", label: "Certifications", suffix: "" },
+    { number: "3+", label: "Certifications", suffix: "" },
     { number: "2", label: "Languages", suffix: "" },
   ];
 
@@ -84,7 +84,7 @@ const About = () => {
               <span className="gradient-text">Digital Solutions</span>
             </h2>
             <p className="section-subtitle mx-auto mt-6">
-              A dedicated software developer with a strong academic background and hands-on experience 
+              A dedicated software developer with a strong academic background and hands-on experience
               in building web applications
             </p>
           </motion.div>
@@ -127,21 +127,21 @@ const About = () => {
                 <div className="space-y-5 text-muted-foreground leading-relaxed">
                   <p>
                     I'm a passionate Computer Science student currently pursuing my B.Tech at{" "}
-                    <span className="text-foreground font-medium">GIET Engineering College</span>, 
-                    Rajahmundry. My journey in tech started with curiosity and has evolved 
+                    <span className="text-foreground font-medium">GIET Engineering College</span>,
+                    Rajahmundry. My journey in tech started with curiosity and has evolved
                     into a deep passion for creating impactful digital solutions.
                   </p>
                   <p>
                     With a strong foundation in programming languages like{" "}
-                    <span className="text-primary">Python</span>, I've developed hands-on 
-                    experience building real-world web applications — including an ML-powered 
+                    <span className="text-primary">Python</span>, I've developed hands-on
+                    experience building real-world web applications — including an ML-powered
                     bus booking platform.
                   </p>
                   <p>
                     I'm currently exploring{" "}
                     <span className="text-accent">Machine Learning</span> and{" "}
-                    <span className="text-accent">Generative AI</span>, and seeking a 
-                    software development internship to contribute to innovative projects 
+                    <span className="text-accent">Generative AI</span>, and seeking a
+                    software development internship to contribute to innovative projects
                     while gaining real-world software development experience.
                   </p>
                 </div>
@@ -161,11 +161,10 @@ const About = () => {
                   variants={itemVariants}
                   className="glass-card p-5 hover-glow group"
                 >
-                  <div className={`w-12 h-12 rounded-xl mb-4 flex items-center justify-center transition-all duration-300 ${
-                    item.color === "primary" 
-                      ? "bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground"
-                      : "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground"
-                  }`}>
+                  <div className={`w-12 h-12 rounded-xl mb-4 flex items-center justify-center transition-all duration-300 ${item.color === "primary"
+                    ? "bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground"
+                    : "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground"
+                    }`}>
                     <item.icon className="w-6 h-6" />
                   </div>
                   <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
